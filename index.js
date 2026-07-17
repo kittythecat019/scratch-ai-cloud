@@ -338,14 +338,13 @@ async function processQueue(cloud){
         item
     );
 
-
+const question = item.question;
 
     let answer;
 
-
     try{
 
-        let answer =
+        answer =
     await askAI(question);
 
 if(answer.length > 100){
