@@ -1,5 +1,5 @@
 console.log("INDEX START");
-
+const http = require("http");
 require("dotenv").config();
 
 const Scratch = require("scratch-api");
@@ -688,5 +688,17 @@ async function start(){
 
 
 // ================= RUN =================
+http.createServer((req,res)=>{
 
+    res.writeHead(200);
+
+    res.end("Scratch AI Cloud is running");
+
+}).listen(3000,()=>{
+
+    console.log(
+        "HTTP server running"
+    );
+
+});
 start();
