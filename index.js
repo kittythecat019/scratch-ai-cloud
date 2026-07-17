@@ -688,16 +688,23 @@ async function start(){
 
 
 // ================= RUN =================
+const http = require("http");
+
+const PORT = process.env.PORT || 3000;
+
 http.createServer((req,res)=>{
 
-    res.writeHead(200);
+    res.writeHead(200, {
+        "Content-Type":"text/plain"
+    });
 
-    res.end("Scratch AI Cloud is running");
+    res.end("Scratch AI Cloud");
 
-}).listen(3000,()=>{
+}).listen(PORT, ()=>{
 
     console.log(
-        "HTTP server running"
+        "HTTP Server running on port",
+        PORT
     );
 
 });
