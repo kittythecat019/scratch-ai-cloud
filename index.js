@@ -351,7 +351,7 @@ if(answer.length > 100){
 
     answer =
         answer.substring(0,100)
-        + "474747";
+        + "...";
 
 }
     }
