@@ -26,7 +26,7 @@ async function askAI(prompt) {
 
                 {
                     role:"system",
-                    content:"As a friendly chatbot, always respond in English and keep your responses concise, around 175 characters."
+                    content:"As a friendly chatbot, always respond in English and keep your responses concise, around 78 characters."
                 },
 
                 {
@@ -63,7 +63,7 @@ async function askAI(prompt) {
     );
 
 
-    return "loi ai";
+    return "AI ERROR";
 
 }
 
