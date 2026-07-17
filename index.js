@@ -347,7 +347,7 @@ async function processQueue(cloud){
 
         answer =
             await askAI(item.question);
-
+      answer = answer.substring(0,100);
     }
     catch(err){
 
