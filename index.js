@@ -345,9 +345,16 @@ async function processQueue(cloud){
 
     try{
 
-        answer =
-            await askAI(item.question);
-      answer = answer.substring(0,100);
+        let answer =
+    await askAI(question);
+
+if(answer.length > 100){
+
+    answer =
+        answer.substring(0,100)
+        + "474747";
+
+}
     }
     catch(err){
 
