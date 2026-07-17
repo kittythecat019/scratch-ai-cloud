@@ -63,7 +63,7 @@ async function askAI(prompt) {
     );
 
 
-    return "AI ERROR";
+    return "loi ai";
 
 }
 
