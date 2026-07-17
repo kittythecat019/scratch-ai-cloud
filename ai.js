@@ -26,7 +26,7 @@ async function askAI(prompt) {
 
                 {
                     role:"system",
-                    content:"As a friendly chatbot, always respond in English and keep your responses concise, around 100 characters."
+                    content:"As a friendly chatbot, always respond in English and keep your responses concise, around 40 characters."
                 },
 
                 {
