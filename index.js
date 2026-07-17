@@ -347,10 +347,10 @@ const question = item.question;
         answer =
     await askAI(question);
 
-if(answer.length > 121){
+if(answer.length > 100){
 
     answer =
-        answer.substring(0,121)
+        answer.substring(0,100)
         + "...";
 
 }
