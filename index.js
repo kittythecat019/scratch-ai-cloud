@@ -1,5 +1,5 @@
 console.log("INDEX START");
-const http = require("http");
+
 require("dotenv").config();
 
 const Scratch = require("scratch-api");
@@ -688,24 +688,5 @@ async function start(){
 
 
 // ================= RUN =================
-const http = require("http");
 
-const PORT = process.env.PORT || 3000;
-
-http.createServer((req,res)=>{
-
-    res.writeHead(200, {
-        "Content-Type":"text/plain"
-    });
-
-    res.end("Scratch AI Cloud");
-
-}).listen(PORT, ()=>{
-
-    console.log(
-        "HTTP Server running on port",
-        PORT
-    );
-
-});
 start();
